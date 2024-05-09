@@ -16,6 +16,7 @@ li{
     align-items: center;
 }
 
+
 .main-nav{
     background-color: #0e1630;
     justify-content: space-between;
@@ -34,6 +35,7 @@ li{
 nav{
     position:fixed;
     width: 100%;    
+    z-index: 100;
 }
 
 .nav-list{
@@ -44,6 +46,16 @@ nav{
 li:hover{
     color: yellow;
     cursor: pointer;
+}
+
+.nav-item{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.nav-item:hover{
+    color: yellow;
+    text-decoration: none;
 }
 
 .title-first-letter{
@@ -79,6 +91,22 @@ li:hover{
     color: aliceblue;
 }
 
+@keyframes typing {
+    from{ width: 0 }
+    to{ width: 50% }
+  }
+
+  @keyframes typing-reverse{
+    from{ width: 50% }
+    to{ width: 0 }
+  }
+
+  @keyframes cursor{
+    50% {
+        border-color: transparent;
+    }
+}
+
 h1{
     color: yellow;
     font-size: 50px;
@@ -93,6 +121,15 @@ h1{
     color: #808dad;
     font-size: 25px;
 }
+
+.writing{
+    display: inline-block;
+    border-right: 5px solid #808dad;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(33), cursor .5s step-end infinite;
+}
+
 
 .introduction p{
     color: #808dad;
@@ -125,13 +162,19 @@ h1{
 }
 
 .card{
-    width:1000px;
+    width:auto;
     height: auto;
     border: 1px solid white;
     margin-right: 20px;
     margin-bottom: 10px;
     border-radius: 10px;
     background-color: #171f38;
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.02);
+    filter:blur(5px);
 }
 
 footer{
@@ -212,7 +255,7 @@ footer{
     margin-right: 10px;
     margin-bottom: 20px;
     img{
-        width: 385px;
+        max-width: 385px;
         height: 250px;
         margin-top: 15px;
         margin-left: 10px;
@@ -237,4 +280,25 @@ footer{
         color: #8e99b5;
         background-color: white;
     }
+}
+
+.achieve-tile{
+    margin-top: 40px;
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 150px;
+    justify-content: space-between;
+    color: white;
+    font-size: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.tile-number{
+    align-items: center;
+    font-size: 50px;
+}
+
+.projects{
+    margin-top: 100px;
 }
