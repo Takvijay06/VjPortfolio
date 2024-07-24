@@ -12,11 +12,26 @@ const Navbar = () => {
         </div>
 
         <div className="flex">
+          <a href="#" className="nav-toggle">
+            <i className="fa-solid fa-bars"></i>
+          </a>
           <ul className="nav-list flex">
-          <li><Link to="/" className="nav-item">Home</Link></li>
-            <li><Link to="/projects" className="nav-item">Projects</Link></li>
+            <li>
+              <Link to="/" className="nav-item">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/projects" className="nav-item">
+                Projects
+              </Link>
+            </li>
             <li>My Shop</li>
-            <li><Link to="/mywork" className="nav-item">My Work</Link></li>
+            <li>
+              <Link to="/mywork" className="nav-item">
+                My Work
+              </Link>
+            </li>
             <li>Login</li>
           </ul>
           <div className="media-links flex">

@@ -5,6 +5,7 @@ import Courses from "./pages/projects";
 import MyWork from "./pages/myWork";
 import AppWrapper from "./pages/appWrapper";
 import NestedComments from "./pages/nestedComments";
+import JiraBoard from "./pages/jiraBorad";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/projects" element={<Courses />} />
         <Route path="/mywork" element={<MyWork />} />
         <Route path="/nestedcomments" element={<NestedComments />} />
+        <Route path="/jiraboard" element={<JiraBoard />} />
       </Routes>
     </AppWrapper>
   );
