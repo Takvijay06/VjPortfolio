@@ -1,5 +1,6 @@
 import { Route, Routes, } from "react-router-dom";
 import "./App.css";
+import "react-toastify/dist/ReactToastify.css";
 import Home from "./pages/home";
 import Courses from "./pages/projects";
 import MyWork from "./pages/myWork";
