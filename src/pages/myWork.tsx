@@ -1,47 +1,24 @@
-import React, { useEffect, useState } from "react";
-import Tabs from "../components/tabs";
-import Shimmertab from "../components/tabs/shimmertab";
+import Tabs from "../components/tabContent/index";
+import Shimmertab from "../components/tabContent/shimmertab";
+import ProgressBar from  "../components/tabContent/progressBar"
+const tabData = [
+  {label:"Shimmer Effect", content:<Shimmertab/>},
+  {label:"Progress bar", content:<ProgressBar />},
+  {label:"Loader", content:<div>TAB 2 CONTENT</div>},
+  {label:"Modal", content:<div>TAB 3 CONTENT</div>},
+  {label:"Stepper", content:<div>TAB 3 CONTENT</div>},
+  {label:"Drag and drop notes", content:<div>TAB 3 CONTENT</div>},
+  {label:"Pagination", content:<div>TAB 3 CONTENT</div>},
+  {label:"Toaster", content:<div>TAB 2 CONTENT</div>},
+]
+
 
 const MyWork = () => {
-  const tabArray = [
-    "Shimmer Effects",
-    "Toaster",
-    "SSO",
-    "Modals",
-    "File Exploror",
-    "Progress Bar",
-    "Stepper",
-    "Drag and drop notes",
-    "Pagination",
-   "Walk-through helper" 
-  ];
-  const [tabs, setTabs] = useState(tabArray);
-  const [selectedTab, setSelectedTab] = useState("Shimmer Effects");
-  const [tabContentMapper, settabContentMapper] = useState({
-    "Shimmer Effects": <Shimmertab />,
-    Toaster: <div>About</div>,
-    Contact: <div>Contact</div>,
-  });
-
-  const handleOnClickTab = (tab: any) => {
-    setSelectedTab(tab);
-  };
 
   return (
     <section className="flex container">
       <div className="projects">
-        <Tabs>
-          <div className="tab">
-            {tabs.map((tab: string, key: number) => {
-              return (
-                <button key={key} onClick={() => handleOnClickTab(tab)}>
-                  {tab}
-                </button>
-              );
-            })}
-            {tabContentMapper["Shimmer Effects"]}
-          </div>
-        </Tabs>
+        <Tabs tabData={tabData}/>
       </div>
     </section>
   );

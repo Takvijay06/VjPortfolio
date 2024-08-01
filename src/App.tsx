@@ -7,6 +7,7 @@ import MyWork from "./pages/myWork";
 import AppWrapper from "./pages/appWrapper";
 import NestedComments from "./pages/nestedComments";
 import JiraBoard from "./pages/jiraBorad";
+import ClosureStore from "./pages/closure";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/mywork" element={<MyWork />} />
         <Route path="/nestedcomments" element={<NestedComments />} />
         <Route path="/jiraboard" element={<JiraBoard />} />
+        <Route path="/closurestore" element={<ClosureStore />} />
       </Routes>
     </AppWrapper>
   );
