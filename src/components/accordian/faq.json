@@ -1,0 +1,19 @@
+[
+    {
+        "question": "What is Accordion ?",
+        "answer":"An accordion is a user interface component that allows users to toggle between hiding and showing sections of content. This is especially useful for organizing and presenting large amounts of information in a limited space, such as in FAQs (Frequently Asked Questions), where each question can be clicked to reveal the answer."
+    },
+
+    {
+        "question": "What is the structure of an Accordion?",
+        "answer":"Accordion Container, Accordion Item, Accordion Header, Accordion Content"
+    },
+    {
+        "question": "What is the Benefits of accordion ?",
+        "answer":"Space Efficiency, Improved User Experience, Organized Content"
+    },
+    {
+        "question": "What will be the conclusion?",
+        "answer":"Accordions are a powerful tool for managing and displaying content in a user-friendly way. Understanding the basic structure and functionality of accordions, along with how to implement them with HTML, CSS, and JavaScript, can greatly enhance the usability of a web application."
+    }
+]

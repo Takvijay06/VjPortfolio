@@ -793,3 +793,135 @@ footer{
     margin-left: 400px;
 }
 
+/* faq and accordion */
+.faq-container{
+    border: 2px solid yellow;
+    margin-left: 10px;
+    margin-top: 25px;
+    h3{
+        margin-left: 10px;
+        font-size: 32px;
+    }
+}
+
+.qna{
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid yellow;
+    margin-bottom: 10px;
+    h4{
+        position:relative;
+        margin-left: 15px;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    span{
+        position: absolute;
+        right: 15px;
+        cursor: pointer;
+    }
+    p{
+        margin-right: 10px;
+        margin-left: 15px;
+        color: yellow;
+    }
+}
+
+
+/* Star rating functionality */
+
+.rate-container{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 1px solid yellow;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center child elements horizontally */
+    .rate-comment{
+        width: 500px;
+        height: 200px;
+        input{
+            width: 95%;
+            height: 100%;
+            margin-left: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+    }
+    button{
+        margin-top: 25px;
+        width: 200px;
+        height: 40px;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: yellow;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: red;
+        color: white;
+    }
+}
+
+.rate-star{
+    margin-top: 15px;
+    font-size: 22px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center star-rating horizontally */
+    span{
+        color: yellow;
+        margin-bottom: 10px;
+    }
+    .star-rating{
+        width: 350px;
+        height: 50px;
+        padding-bottom: 10px;
+        span{ 
+            margin-left: 30px;
+            font-size: 40px;
+            cursor: pointer;
+        }
+    }
+}
+
+/* Quiz css */
+.quiz-container{
+    border: 1px solid yellow;
+    margin-top: 10px;
+    .quiz-content{
+        margin: 20px;
+        h3{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 32px;
+        }
+        p{
+            color:yellow;
+            font-size: 24px;
+        }
+        ol{
+            li{
+                font-size: 24px;
+            }
+        }
+    }
+    .quiz-button{
+        button{
+            width: 120px;
+            height: 40px;
+            margin-left: 10px;
+            background-color: lightskyblue;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: yellow;
+        }
+    }
+}
