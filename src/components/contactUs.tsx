@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
-import Confetti from 'react-confetti'
 import { Bounce, ToastContainer, toast } from "react-toastify";
 
 const ContactUs = () => {
