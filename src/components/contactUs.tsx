@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
+import Confetti from 'react-confetti'
 import { Bounce, ToastContainer, toast } from "react-toastify";
 
 const ContactUs = () => {
@@ -71,6 +72,7 @@ const ContactUs = () => {
 
   return (
     <section className="container flex details-section">
+      {/* <Confetti width={window.innerWidth} height={window.innerHeight} /> */}
       <div className="connect-me">
         <h2>--Connect with me</h2>
         <div className="location">

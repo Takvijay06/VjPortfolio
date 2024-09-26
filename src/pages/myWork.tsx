@@ -4,6 +4,7 @@ import ProgressBar from "../components/tabContent/progressBar";
 import Faq from "../components/accordian/faq";
 import RateUs from "../components/starRating";
 import Quiz from "../components/tabContent/quiz";
+import TrafficLight from "../components/tabContent/trafficLight";
 
 const tabData = [
   { label: "Shimmer Effect", content: <Shimmertab /> },
@@ -11,6 +12,7 @@ const tabData = [
   { label: "Accordian", content: <Faq /> },
   { label: "Star Rating", content: <RateUs /> },
   { label: "My Quiz", content: <Quiz /> },
+  { label: "Traffic Light", content: <TrafficLight /> },
   { label: "Nested Circle", content: <div>TAB 2 CONTENT</div> },
   { label: "Virtualised List", content: <div>TAB 2 CONTENT</div> },
   { label: "Loader", content: <div>TAB 2 CONTENT</div> },
