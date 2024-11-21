@@ -959,7 +959,6 @@ footer {
   }
 }
 
-
 /* Modal */
 .modal-overlay {
   position: fixed;
@@ -1022,4 +1021,82 @@ p {
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
+}
+
+/* stepper */
+
+.stepper-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.stepper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.stepper-item {
+  display: flex;
+  align-items: center;
+}
+
+.stepper-button {
+  padding: 10px 15px;
+  border: 2px solid blue;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.stepper-button:hover {
+  background: blue;
+  color: white;
+}
+
+.stepper-connector {
+  flex-grow: 1;
+  height: 2px;
+  background-color: blue;
+}
+
+.stepper-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  min-height: 200px;
+  gap: 20px;
+}
+
+.stepper-actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.back-button,
+.continue-button {
+  padding: 10px 20px;
+  border: 2px solid blue;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.back-button:disabled,
+.continue-button:disabled {
+  background: #ddd;
+  color: #999;
+  cursor: not-allowed;
 }

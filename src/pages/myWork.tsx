@@ -6,6 +6,8 @@ import RateUs from "../components/starRating";
 import Quiz from "../components/tabContent/quiz";
 import TrafficLight from "../components/tabContent/trafficLight";
 import ModalContainer from "../components/tabContent/modalContainer";
+import Stepper from "../components/stepper";
+import stepperData from "../components/stepper/stepperData";
 
 const tabData = [
   { label: "Shimmer Effect", content: <Shimmertab /> },
@@ -15,10 +17,10 @@ const tabData = [
   { label: "My Quiz", content: <Quiz /> },
   { label: "Traffic Light", content: <TrafficLight /> },
   { label: "Modal", content: <ModalContainer /> },
+  { label: "Stepper", content: <Stepper data={stepperData}/> },
   { label: "Nested Circle", content: <div>TAB 2 CONTENT</div> },
   { label: "Virtualised List", content: <div>TAB 2 CONTENT</div> },
   { label: "Loader", content: <div>TAB 2 CONTENT</div> },
-  { label: "Stepper", content: <div>TAB 3 CONTENT</div> },
   { label: "Drag and drop notes", content: <div>TAB 3 CONTENT</div> },
   { label: "Pagination", content: <div>TAB 3 CONTENT</div> },
   { label: "Toaster", content: <div>TAB 2 CONTENT</div> },
