@@ -8,6 +8,7 @@ import TrafficLight from "../components/tabContent/trafficLight";
 import ModalContainer from "../components/tabContent/modalContainer";
 import Stepper from "../components/stepper";
 import stepperData from "../components/stepper/stepperData";
+import Toaster from "../components/tabContent/toaster";
 
 const tabData = [
   { label: "Shimmer Effect", content: <Shimmertab /> },
@@ -18,12 +19,13 @@ const tabData = [
   { label: "Traffic Light", content: <TrafficLight /> },
   { label: "Modal", content: <ModalContainer /> },
   { label: "Stepper", content: <Stepper data={stepperData}/> },
+  { label: "Toaster", content: <Toaster /> },
   { label: "Nested Circle", content: <div>TAB 2 CONTENT</div> },
   { label: "Virtualised List", content: <div>TAB 2 CONTENT</div> },
   { label: "Loader", content: <div>TAB 2 CONTENT</div> },
   { label: "Drag and drop notes", content: <div>TAB 3 CONTENT</div> },
   { label: "Pagination", content: <div>TAB 3 CONTENT</div> },
-  { label: "Toaster", content: <div>TAB 2 CONTENT</div> },
+  
 ];
 
 const MyWork = () => {

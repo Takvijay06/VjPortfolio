@@ -34,7 +34,7 @@ li {
 nav {
   position: fixed;
   width: 100%;
-  z-index: 100;
+  z-index: 10;
 }
 
 .nav-list {
@@ -1099,4 +1099,57 @@ p {
   background: #ddd;
   color: #999;
   cursor: not-allowed;
+}
+
+/* Toaster */
+
+.toast-container {
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 11;
+}
+
+.toast {
+  width: 12rem;
+  border-radius: 0.5rem;
+  color: white;
+  padding: 1rem;
+  animation: slide 1s;
+  position: relative;
+  margin: 0.2rem;
+  span {
+    position: absolute;
+    right: 0.7rem;
+    cursor: pointer;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.toast-button {
+  height: 100px;
+  padding: 100px;
+  button {
+    width: 200px;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #0e1630;
+    border: 1px solid yellow;
+    color: #ddd;
+  }
+  button:hover {
+    background-color: white;
+    border: 1px solid red;
+    color: black;
+  }
+
 }
